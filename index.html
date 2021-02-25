@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
+        <style>
+            body {
+                font-family: "Roboto", serif, Arial;
+                font-weight: 100;
+                background-image: url("images/wallpaper.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: 100% 100%;
+                color: #ffffff;
+                max-width: 1024px;
+                margin: 0 auto;
+                text-shadow: #000000 0 0 5px;
+            }
+            .myName {
+                font-size: 80px;
+                width: 100%;
+            }
+            .myDiv {
+                text-align: center;
+                margin-bottom: 100px;
+            }
+            .myImage {
+                width: 200px;
+                height: 200px;
+                margin-top: 50px;
+                border-radius: 50%;
+            }
+            .myIntro {
+                font-size: 32px;
+            }
+            tr, td {
+                text-align: center;
+            }
+            table {
+                width: 100%;
+            }
+            ul li {
+                list-style: none;
+                list-style-position: inside;
+                margin: auto;
+                padding: 0px;
+                font-size: 20px;
+            }
+
+            .myHeader {
+                font-size: 60px;
+                width: 100%;
+            }
+
+            .myDiv img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .flip-box {
+                background-color: transparent;
+                width: 200px;
+                height: 200px;
+                perspective: 500px;
+            }
+            .flip-box-front {
+                background-color: transparent;
+                color: #000000;
+            }
+            .flip-box-back {
+                color: #ffffff;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: goldenrod;
+                transform: rotateY(180deg);
+            }
+            .flip-box-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.5s;
+                transform-style: preserve-3d;
+            }
+            .flip-box-back, .flip-box-front {
+                vertical-align: middle;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+            .flip-box:hover .flip-box-inner {
+                transform: rotateY(180deg);
+				width: 200px;
+            }
+            .myAnime {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            input {
+                width: 300px;
+                height: 30px;
+                text-align: center;
+                font-size: 20px;
+            }
+            button {
+                border: 0;
+                width: 120px;
+                height: 40px;
+                background-color: #b71c1c;
+                color: #ffffff;
+                cursor: pointer;
+                font-size: large;
+            }
+            button:hover {
+                background-color: goldenrod;
+            }
+            label {
+                font-size: xx-large;
+            }
+            .ps {
+                text-align: center;
+                color: yellow;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="myDiv">
+            <img src="images/rannel.jpg" class="myImage">
+            <p class="myName">Rannel D. Sayco</p>
+            <p class="myIntro">
+                Computer Technician . Designer . Uncle . Big Brother .
+                <br/><br/>
+                Graduated with a 2-year technical education with competencies in Computer Systems Servicing and Animation. A fan of graphic designs and wishes to acquire Web Development skills for personal and career advancement.
+            </p>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <h1>What I can do</h1>
+                </td>
+                <td>
+                    <h1>What I want to do</h1>
+                </td>
+                <td>
+                    <h1>What I won't do</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Graphic Designs</li>
+                        <li>Computer Repair</li>
+                        <li>Traditional Animation</li>
+                        <li>Drawing</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>To create my own website</li>
+                        <li>To create mobile applications</li>
+                        <li>To learn contemporary programming languages</li>
+                        <li>To improve my designing skills</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Design graphics for free</li>
+                        <li>Repair computers for free</li>
+                        <li>Hack anyone's facebook account</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <hr/>
+        <div class="myDiv">
+            <p class="myHeader">The Seven Deadly Sins</p>
+            <div class="myAnime">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/meliodas.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Meliodas</h2>
+                        <p>Sin of Wrath</p>
+                    </div>
+                </div>
+            </div>            
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/diane.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Diane</h2>
+                        <p>Sin of Envy</p>
+                    </div>
+                </div>
+            </div>
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/ban.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ban</h2>
+                        <p>Sin of Greed</p>
+                    </div>
+                </div>
+            </div>
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/king.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>King</h2>
+                        <p>Sin of Sloth</p>
+                    </div>
+                </div>
+            </div>
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/gowther.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Gowther</h2>
+                        <p>Sin of Lust</p>
+                    </div>
+                </div>
+            </div>
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/merlin.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Merlin</h2>
+                        <p>Sin of Gluttony</p>
+                    </div>
+                </div>
+            </div>
+			<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/escanor.jpg">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Escanor</h2>
+                        <p>Sin of Pride</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+
+        <hr/>
+        <div class="myDiv">
+            <p class="myHeader">JavaScript Basic</p>
+            <h1>How old are you?</h1>
+            <input type="date" id="bday"/>
+            <p><button class="myClass" onclick="calcAge()">Show Age</button></p>
+            <label id="bdayOutput"></label>
+
+            <hr style="width: 50%"/>
+
+            <h1>What do you want to tell the world?</h1>
+            <input type="text" id="shout"/>
+            <p><button class="myClass" onclick="shout()">Show Out!</button></p>
+            <label id="shoutOut"></label>
+        </div>
+
+        <script>
+            document.getElementById("bday").value = "2021-02-22";
+
+            function calcAge() {
+                var bdate = new Date(document.getElementById("bday").value);
+                var diff = Date.now() - bdate.getTime();
+                var age = new Date(diff);
+                document.getElementById("bdayOutput").innerText = "You're " + Math.abs(age.getUTCFullYear() - 1970) + " years old";
+            }
+
+            function shout() {
+                var shoutText = document.getElementById("shout").value;
+                document.getElementById("shoutOut").innerText = shoutText.toUpperCase();
+            }
+        </script>
+
+        <div class="ps">
+            <p>Thank you po sa pagtuturo! More power to you and to your channel.</p>
+        </div>
+    </body>
+</html>
